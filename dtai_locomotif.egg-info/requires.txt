@@ -1,0 +1,2 @@
+numba>=0.30.0
+matplotlib<4.0,>=3.0
