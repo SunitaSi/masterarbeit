@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.metrics import mean_absolute_error
-
+#test
 
 def load_csv(path: str) -> pd.DataFrame:
     """Load a CSV file into a DataFrame."""
