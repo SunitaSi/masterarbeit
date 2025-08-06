@@ -8,7 +8,7 @@ CBF,20,384,704
 Chinatown,10
 ChlorineConcentration,10,2365
 CinCECGTorso,10,2663,5121
-Coffee,10,500xq
+Coffee,10,500
 Computers,50,5625
 CricketX,10,712,1293,1930,2586
 CricketY,10,525,1162,1837,2399

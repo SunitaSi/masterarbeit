@@ -119,7 +119,7 @@ def process_files(
     df2 = load_csv(file2_path)
     merged = merge_datasets(df1, df2)
 
-    methods = ['FFT', 'ACF', 'SuSS', 'MWF', 'Autoperiod', 'RobustPeriod']
+    methods = ['FFT', 'ACF', 'SuSS', 'MWF', 'Autoperiod', 'RobustPeriod', 'ReWin']
 
     # Compute detailed AD entries
     ad_entries = []
@@ -142,10 +142,10 @@ def process_files(
 
 
 if __name__ == '__main__':
-    ws_csv = "window_sizes.csv"
+    ws_csv = "experiments/window_sizes_rewin.csv"
     pairs = [
-        ("tssb_gt/ts_gt.csv", "results/ad_results.csv", "results/mae_results.csv"),
-        ("tssb_gt/ts_gt-.csv", "results/ad_results-.csv", "results/mae_results-.csv"),
+        ("experiments/tssb_gt/ts_gt.csv", "experiments/results/ad_results.csv", "experiments/results/mae_results.csv"),
+        ("experiments/tssb_gt/ts_gt-.csv", "experiments/results/ad_results-.csv", "experiments/results/mae_results-.csv"),
     ]
     for file2, ad_file, mae_file in pairs:
         process_files(ws_csv, file2, ad_file, mae_file)
