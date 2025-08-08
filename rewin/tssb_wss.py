@@ -40,6 +40,7 @@ if __name__ == "__main__":
     exp_path  = "experiments/"
     input_csv = os.path.join(exp_path, "window_sizes_rewin.csv")
    
-    n_jobs, verbose = -1, 0
+   # n_jobs = -1 for parallel
+    n_jobs, verbose = 1, 0
 
     extend_csv_with_rewin(exp_path, input_csv, n_jobs, verbose)
